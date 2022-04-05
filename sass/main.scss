@@ -28,6 +28,36 @@ body {
     
 }
 
+@mixin tel {
+    @media screen and (min-width:480px) {
+        @content;
+    }
+}
+
+@mixin tel-max {
+    @media screen and (max-width:767px) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media screen and (min-width:768px) {
+        @content;
+    }
+}
+
+@mixin tab-max {
+    @media screen and (max-width:1199px) {
+        @content;
+    }
+}
+
+@mixin desk {
+    @media screen and (min-width:1200px) {
+        @content;
+    }
+}
+
 .gallery {
     background: linear-gradient(180deg, rgb(355, 245, 246) 40%, rgb(255, 255, 255) 40%, rgb(255, 255, 255) 100%);
 
