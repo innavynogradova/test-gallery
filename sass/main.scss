@@ -28,58 +28,133 @@ body {
     
 }
 
-.container .box {
-    width: 100%;
-    margin: 0 0 20px;
-    padding: 10px;
-    background: #F0D1A5;
-    border-radius: 45px;
-    overflow: hidden;
-    break-inside: avoid;
-}
+.gallery {
+    background: linear-gradient(180deg, rgb(355, 245, 246) 40%, rgb(255, 255, 255) 40%, rgb(255, 255, 255) 100%);
 
-.container .box img {
-    width: 100%;
-}
-
-.container .box h2 {
-    margin: 0;
-    padding: 10px 10px 20px 10px;
-    font-size: 20px;
-
-
-}
-
-.container .box p {
-    margin: 0;
-    padding: 0 10px 20px 10px;
-    font-style: 16px;
-}
-
-.container-img {
-    margin: 0 auto;
-    columns: 3;
-    column-gap: 40px;
-
-    @media screen and (max-width: 1199px) {
-            columns: 2;
-            width: calc(100% - 40px);
-            box-sizing: border-box;
-            padding: 20px 20px 20px 0;
-    
+    @media screen and (min-width: 768px) {
+        background: linear-gradient(180deg, rgb(255, 245, 246) 40%, rgb(255, 255, 255) 40%, rgb(255, 255, 255) 100%);
     }
-    @media screen and (max-width: 767px) {
-            columns: 1;
-            width: calc(100% - 40px);
-            box-sizing: border-box;
-            padding: 20px 20px 20px 0;
+
+    @media screen and (min-width: 1200px) {
+        background: linear-gradient(180deg, rgb(255, 245, 246) 40%, rgb(255, 255, 255) 40%, rgb(255, 255, 255) 100%);
     }
 }
 
-.box__img {
-    margin: 0;
-    padding: 0;
-    border-radius: 45px;
-    overflow: hidden;
+.gallery img {
+    min-width: 40px;
+    min-height: 40px;
+
+    @include tab {
+        width: 83px;
+        height: 83px;
+    }
+
+    @include desk {
+        width: 140px;
+        height: 140px;
+    }
+
+    border-radius: 10px;
+    transition-property: transform;
+
+    &:hover {
+        transform: scale(1.5);
+        transition-duration: 500ms;
+    }
+}
+
+.gallery .large img {
+    min-width: 84px;
+    min-height: 84px;
+
+    @include tab {
+        width: 172px;
+        height: 172px;
+    }
+
+    @include desk {
+        width: 290px;
+        height: 290px;
+    }
+}
+
+.gallery__flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery__column:not(:last-child) {
+    margin-right: 4px;
+
+    @include tab {
+        margin-right: 6px;
+    }
+
+    @include desk {
+        margin-right: 7px;
+    }
+
+}
+
+.gallery__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery__picture+.gallery__picture {
+    margin-top: 4px;
+
+    @include tab {
+        margin-top: 6px;
+    }
+
+    @include desk {
+        margin-top: 7px;
+    }
+}
+
+.gallery__column:nth-child(2) {
+    margin-top: 10px;
+
+    @include tab {
+        margin-top: 15px;
+    }
+
+    @include desk {
+        margin-top: 20px;
+    }
+}
+
+.gallery__column:nth-child(4) {
+    margin-top: 20px;
+
+    @include tab {
+        margin-top: 30px;
+    }
+
+    @include desk {
+        margin-top: 40px;
+    }
+}
+
+.gallery__column:nth-child(5) {
+    margin-bottom: 20px;
+
+    @include tab {
+        margin-bottom: 30px;
+    }
+
+    @include desk {
+        margin-bottom: 40px;
+    }
+}
+
+.gallery__column:nth-child(6) {
+    margin-top: 5px;
+
+    @include tab {
+        margin-bottom: 10px;
+    }
 }
 

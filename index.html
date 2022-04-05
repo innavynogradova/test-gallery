@@ -15,79 +15,179 @@
     <link rel="stylesheet" href="./sass/main.css">
 </head>
 <body>
-    <div class="container">
-        <div class="container-img">
-            <div class="box">
-                <div class="box__img">
-                    <img src="./images/gallery1.jpg">
+    <section class="gallery">
+            <div class="container">
+                <h2 class="visually-hidden">
+                    Gallery
+                </h2>
+                <div class="gallery__flex">
+                    <div class="gallery__column">
+                        <picture class="gallery__picture">
+                            <source srcset="
+                                                    ./images/gallery/gallery-1-desk.jpg 1x,
+                                                    ./images/gallery/gallery-1-desk.jpg 2x
+                                                    " media="(min-width: 1200px)" />
+                            <source srcset="
+                                                    ./images/gallery/gallery-1-desk.jpg 1x,
+                                                    ./images/gallery/gallery-1-desk.jpg 2x
+                                                    " media="(min-width: 768px)" />
+                            <source srcset="
+                                                    ./images/gallery/gallery-1-desk.jpg 1x,
+                                                    ./images/gallery/gallery-1-desk.jpg 2x
+                                                    " media="(min-width: 320px)" />
+                            <img class="gallery__img" src="./images/gallery/gallery-1-desk.jpg" alt="Gallery">
+                        </picture>
+                    </div>
+                    <div class="gallery__column">
+                        <picture class="gallery__picture">
+                            <source srcset="
+                                                    ./images/gallery/gallery-2-desk.jpg 1x,
+                                                    ./images/gallery/gallery-2-desk.jpg 2x
+                                                    " media="(min-width: 1200px)" />
+                            <source srcset="
+                                                    ./images/gallery/gallery-2-desk.jpg 1x,
+                                                    ./images/gallery/gallery-2-desk.jpg 2x
+                                                    " media="(min-width: 768px)" />
+                            <source srcset="
+                                                    ./images/gallery/gallery-2-desk.jpg 1x,
+                                                    ./images/gallery/gallery-2-desk.jpg 2x
+                                                    " media="(min-width: 320px)" />
+                            <img class="gallery__img" src="./images/gallery/gallery-2-desk.jpg" alt="Gallery">
+                        </picture>
+                        <picture class="gallery__picture">
+                            <source srcset="
+                                                    ./images/gallery/gallery-3-desk.jpg 1x,
+                                                    ./images/gallery/gallery-3-desk.jpg 2x
+                                                    " media="(min-width: 1200px)" />
+                            <source srcset="
+                                                    ./images/gallery/gallery-3-desk.jpg 1x,
+                                                    ./images/gallery/gallery-3-desk.jpg 2x
+                                                    " media="(min-width: 768px)" />
+                            <source srcset="
+                                                    ./images/gallery/gallery-3-desk.jpg 1x,
+                                                    ./images/gallery/gallery-3-desk.jpg 2x
+                                                    " media="(min-width: 320px)" />
+                            <img class="gallery__img" src="./images/gallery/gallery-3-desk.jpg" alt="Gallery">
+                        </picture>
+                    </div>
+                    <div class="gallery__column">
+                        <picture class="gallery__picture large">
+                            <source srcset="
+                                                    ./images/gallery/gallery-4-desk.jpg 1x,
+                                                    ./images/gallery/gallery-4-desk.jpg 2x
+                                                    " media="(min-width: 1200px)" />
+                            <source srcset="
+                                                    ./images/gallery/gallery-4-desk.jpg 1x,
+                                                    ./images/gallery/gallery-4-desk.jpg 2x
+                                                    " media="(min-width: 768px)" />
+                            <source srcset="
+                                                    ./images/gallery/gallery-4-desk.jpg 1x,
+                                                    ./images/gallery/gallery-4-desk.jpg 2x
+                                                    " media="(min-width: 320px)" />
+                            <img class="gallery__img" src="./images/gallery/gallery-4-desk.jpg" alt="Gallery">
+                        </picture>
+                        <picture class="gallery__picture">
+                            <source srcset="
+                                                    ./images/gallery/gallery-5-desk.jpg 1x,
+                                                    ./images/gallery/gallery-5-desk.jpg 2x
+                                                    " media="(min-width: 1200px)" />
+                            <source srcset="
+                                                    ./images/gallery/gallery-5-desk.jpg 1x,
+                                                    ./images/gallery/gallery-5-desk.jpg 2x
+                                                    " media="(min-width: 768px)" />
+                            <source srcset="
+                                                    ./images/gallery/gallery-5-desk.jpg 1x,
+                                                    ./images/gallery/gallery-5-desk.jpg 2x
+                                                    " media="(min-width: 320px)" />
+                            <img class="gallery__img" src="./images/gallery/gallery-5-desk.jpg" alt="Gallery">
+                        </picture>
+                    </div>
+                    <div class="gallery__column">
+                        <picture class="gallery__picture">
+                            <source srcset="
+                                                    ./images/gallery/gallery-6-desk.jpg 1x,
+                                                    ./images/gallery/gallery-6-desk.jpg 2x
+                                                    " media="(min-width: 1200px)" />
+                            <source srcset="
+                                                    ./images/gallery/gallery-6-desk.jpg 1x,
+                                                    ./images/gallery/gallery-6-desk.jpg 2x
+                                                    " media="(min-width: 768px)" />
+                            <source srcset="
+                                                    ./images/gallery/gallery-6-desk.jpg 1x,
+                                                    ./images/gallery/gallery-6-desk.jpg 2x
+                                                    " media="(min-width: 320px)" />
+                            <img class="gallery__img" src="./images/gallery/gallery-6-desk.jpg" alt="Gallery">
+                        </picture>
+                        <picture class="gallery__picture">
+                            <source srcset="
+                                                    ./images/gallery/gallery-7-desk.jpg 1x,
+                                                    ./images/gallery/gallery-7-desk.jpg 2x
+                                                    " media="(min-width: 1200px)" />
+                            <source srcset="
+                                                    ./images/gallery/gallery-7-desk.jpg 1x,
+                                                    ./images/gallery/gallery-7-desk.jpg 2x
+                                                    " media="(min-width: 768px)" />
+                            <source srcset="
+                                                    ./images/gallery/gallery-7-desk.jpg 1x,
+                                                    ./images/gallery/gallery-7-desk.jpg 2x
+                                                    " media="(min-width: 320px)" />
+                            <img class="gallery__img" src="./images/gallery/gallery-7-desk.jpg" alt="Gallery">
+                        </picture class="gallery__picture">
+                    </div>
+                    <div class="gallery__column">
+                        <picture class="gallery__picture">
+                            <source srcset="
+                                                    ./images/gallery/gallery-8-desk.jpg 1x,
+                                                    ./images/gallery/gallery-8-desk.jpg 2x
+                                                    " media="(min-width: 1200px)" />
+                            <source srcset="
+                                                    ./images/gallery/gallery-8-desk.jpg 1x,
+                                                    ./images/gallery/gallery-8-desk.jpg 2x
+                                                    " media="(min-width: 768px)" />
+                            <source srcset="
+                                                    ./images/gallery/gallery-8-desk.jpg 1x,
+                                                    ./images/gallery/gallery-8-desk.jpg 2x
+                                                    " media="(min-width: 320px)" />
+                            <img class="gallery__img" src="./images/gallery/gallery-8-desk.jpg" alt="Gallery">
+                        </picture>
+                        <picture class="gallery__picture">
+                            <source srcset="
+                                                    ./images/gallery/gallery-9-desk.jpg 1x,
+                                                    ./images/gallery/gallery-9-desk.jpg 2x
+                                                    " media="(min-width: 1200px)" />
+                            <source srcset="
+                                                    ./images/gallery/gallery-9-desk.jpg 1x,
+                                                    ./images/gallery/gallery-9-desk.jpg 2x
+                                                    " media="(min-width: 768px)" />
+                            <source srcset="
+                                                    ./images/gallery/gallery-9-desk.jpg 1x,
+                                                    ./images/gallery/gallery-9-desk.jpg 2x
+                                                    " media="(min-width: 320px)" />
+                            <img class="gallery__img" src="./images/gallery/gallery-9-desk.jpg" alt="Gallery">
+                        </picture class="gallery__picture">
+                    </div>
+                    <div class="gallery__column">
+                        <picture>
+                            <source srcset="
+                                                    ./images/gallery/gallery-10-desk.jpg 1x,
+                                                    ./images/gallery/gallery-10-desk.jpg 2x
+                                                    " media="(min-width: 1200px)" />
+                            <source srcset="
+                                                    ./images/gallery/gallery-10-desk.jpg 1x,
+                                                    ./images/gallery/gallery-10-desk.jpg 2x
+                                                    " media="(min-width: 768px)" />
+                            <source srcset="
+                                                    ./images/gallery/gallery-10-desk.jpg 1x,
+                                                    ./images/gallery/gallery-10-desk.jpg 2x
+                                                    " media="(min-width: 320px)" />
+                            <img class="gallery__img" src="./images/gallery/gallery-10-desk.jpg" alt="Gallery">
+                        </picture>
+                    </div>
+        
                 </div>
-                <h2>Title goes here</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, commodi!</p>
             </div>
-            <div class="box">
-                <div class="box__img">
-                    <img src="./images/gallery2.jpg">
-                </div>
-                <h2>Title goes here</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, alias.</p>
-            </div>
-            <div class="box">
-                <div class="box__img">
-                    <img src="./images/gallery3.jpg">
-                </div>
-                <h2>Title goes here</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, obcaecati aperiam. Enim sunt accusantium placeat nesciunt magnam corporis sed magni!</p>
-            </div>
-            <div class="box">
-                <div class="box__img">
-                    <img src="./images/gallery4.jpg">
-                </div>
-                <h2>Title goes here</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, alias.</p>
-            </div>
-            <div class="box">
-                <div class="box__img">
-                    <img src="./images/gallery5.jpg">
-                </div>
-                <h2>Title goes here</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nemo eum, consequatur quibusdam voluptatum repudiandae!</p>
-            </div>
-            <div class="box">
-                <div class="box__img">
-                    <img src="./images/gallery6.jpg">
-                </div>
-                <h2>Title goes here</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, alias.</p>
-            </div>
-            <div class="box">
-                <div class="box__img">
-                    <img src="./images/gallery7.jpg">
-                </div>
-                <h2>Title goes here</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem et illum aliquid deleniti esse ullam iusto aut perspiciatis. Porro esse animi quia quae molestias velit.</p>
-            </div>
-            <div class="box">
-                <div class="box__img">
-                    <img src="./images/gallery8.jpg">
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, alias.</p>
-            </div>
-            <div class="box">
-                <div class="box__img">
-                    <img src="./images/gallery9.jpg">
-                </div>
-                <h2>Title goes here</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, alias.</p>
-            </div>
-            <div class="box">
-                <div class="box__img">
-                    <img src="./images/gallery10.jpg">
-                </div>
-                <h2>Title goes here</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, alias.</p>
-            </div>
-        </div>
-    </div>
+    </section>
+
 </body>
 
 </html>
